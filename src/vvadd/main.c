@@ -97,6 +97,8 @@ int main(int argc, char** argv)
         impl = impl_vector_ptr      ; impl_str = "vectorized"  ;
       } else if (strcmp(argv[i], "para" ) == 0) {
         impl = impl_parallel_ptr    ; impl_str = "parallelized";
+      } else if (strcmp(argv[i], "ref"  ) == 0) {
+        impl = impl_ref             ; impl_str = "ref";
       } else {
         impl = NULL                 ; impl_str = "unknown"     ;
       }
